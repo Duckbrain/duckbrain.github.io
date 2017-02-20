@@ -1,0 +1,14 @@
+---
+layout: post
+title: Javascript Object Browser Update 1.2.0
+date: '2014-06-24T08:23:00.001-07:00'
+author: Jonathan Duck
+tags:
+- google chrome
+- my software
+modified_time: '2014-11-04T21:02:08.134-08:00'
+blogger_id: tag:blogger.com,1999:blog-3837863739089365212.post-3582344548095097713
+blogger_orig_url: http://duck-producktions.blogspot.com/2014/06/javascript-object-browser-update-120.html
+---
+
+<div class="separator" style="clear: both; text-align: center;"></div><br /><br />Hey everyone. I just released an update to my Chrome Extension <a href="https://chrome.google.com/webstore/detail/javascript-object-browser/gpaagbhojejffmocmmjclhedfijjafja?utm_source=chrome-ntp-icon">Javascript Object Browser</a>. Updates include:<br /><br /><ul><li>Alphabetic Sorting (finally)&nbsp;</li><li>Newish Icon&nbsp;</li><li>The functions and objects the extension uses are now anonymous, so they won't show up in the browser.</li><li>Updates for Chrome extensions manifest version 2 and security handling.</li><li>Added a bunch more permissions to allow it to access more chrome APIs</li></ul><br />The original version was not very good. This one is a little better, but not a lot. I write the tool when I was brand new to JavaScript and web development. I have started to implement some better standards and code layout.<br /><br />There is a lot more this tool can do than meets the eye. For example:<br /><ul><li>You can use it as a playground for Chrome and HTML5 APIs. Open up a Chrome JavaScript Console with Ctrl+Shift+J (It is way better than the one I built in.)</li><li>Use it as a reference. I have found some databases of JavaScript documentation, but I have yet to take the plunge of having the app use these. It can still be useful for learning the DOM, etc.</li><li>Save the page and use it in another browser. <strike>Just hit Ctrl+S and then open it in Firefox or IE.</strike></li><ul><li>Nevermind, I just checked and it does not work in IE, and you have to view source and save the index.html and index.js files for it to work in Firefox. I will have to fix IE support later.</li><li>The update for chrome, now makes it no longer a single html file. (That was a feature.)</li></ul><li>Explore APIs of external libraries. <b>Warning</b>: This uses the eval function and is very dangerous. Even more than running it in a regular web browser. Any JavaScript files you put in there will have access to all the data on all your tabs through the Chrome Extension APIs. Please be careful and use only well known libraries.</li></ul>Head on over the the <a href="https://chrome.google.com/webstore/detail/javascript-object-browser/gpaagbhojejffmocmmjclhedfijjafja?utm_source=chrome-ntp-icon">Chrome Web Store</a> and try it out.<br /><br />UPDATE: I just pushed out a fix for a regression introduced with loading libraries. While I was at it, I added a few new features. There is now a toggle for the panel and a clear message about it's usage of eval.

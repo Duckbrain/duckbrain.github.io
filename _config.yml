@@ -7,15 +7,6 @@ locale: en
 #for meta name="author" :
 author: 
 
-#Target date in UTC / GMT
-countdown:
-  theme: red
-  year: 2016
-  month: 11
-  day: 13
-  hour: 0
-  minute: 0
-
 # Site owner
 owner:
   name: Jonathan Duck
@@ -33,10 +24,10 @@ owner:
 sass:
   sass_dir: _sass
   style: compressed
-permalink: /:categories/:title/
 kramdown:
   toc_levels: 1..2
-highlighter: rouge
+  
+permalink: /blog/:year/:month/:day/:title
 
 
 exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
