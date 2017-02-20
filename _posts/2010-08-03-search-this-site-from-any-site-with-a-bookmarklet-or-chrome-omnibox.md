@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "\"Search this Site\" from any site with a Bookmarklet or Chrome Omnibox"
-date:   2014-04-03 20:15:01 -0800
+date:   2010-08-03 20:15:01 -0800
 categories: chrome
 ---
 If you don't already have Google Chrome, I recommend it. Otherwise this can be adapted for FireFox, Internet Explorer, Safari, or any other web browser.

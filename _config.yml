@@ -5,7 +5,7 @@ description: "Web Development"
 #if you modify locale please have a look at _data/messages.yml too
 locale: en
 #for meta name="author" :
-author: 
+author: Jonathan Duck
 
 # Site owner
 owner:

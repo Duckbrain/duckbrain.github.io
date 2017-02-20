@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
 /*
-	Read Only by HTML5 UP
+	Read Only by HTML5 UP, modified by Jonathan Duck
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -2559,7 +2559,7 @@ input[type="button"]:disabled,
 
 /* One */
 
-#about:before {
+#top:before {
   background-color: #8cdfff;
   background-image: url("../../images/banner.svg");
   background-position: top right;
@@ -2730,7 +2730,7 @@ input[type="button"]:disabled,
     padding: 44px 0 1px 0;
   }
   /* One */
-  #about:before {
+  #top:before {
     height: 10em;
   }
   /* Off-Canvas Navigation */
@@ -2901,7 +2901,7 @@ input[type="button"]:disabled,
     padding: 2em 0 0 0;
   }
   /* One */
-  #about:before {
+  #top:before {
     height: 7em;
   }
   /* Footer */
