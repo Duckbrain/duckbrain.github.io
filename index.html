@@ -1,51 +1,17 @@
-<!DOCTYPE HTML>
-<html>
-
-<head>
-  <title>Jonathan Duck's Github Projects</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="shortcut icon" href="favicon.png" />
-  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-</head>
-
-<body>
-
-  <!-- Header -->
-  <section id="header">
-    <header>
-      <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-      <h1 id="logo"><a href="#">Jonathan Duck</a></h1>
-      <p>I love programming, with an emphasis on web development.</p>
-    </header>
-    <nav id="nav">
-      <ul>
-        <li><a href="#one" class="active">About</a></li>
-        <li><a href="#two">Things I like to do</a></li>
-        <li><a href="#three">A Few Accomplishments</a></li>
-        <li><a href="#four">Contact</a></li>
-      </ul>
-    </nav>
-    <footer>
-      <ul class="icons">
-        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-        <li><a href="https://github.com/duckbrain" class="icon fa-github"><span class="label">Github</span></a></li>
-        <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-      </ul>
-    </footer>
-  </section>
-
-  <!-- Wrapper -->
-  <div id="wrapper">
-
-    <!-- Main -->
-    <div id="main">
-
+---
+layout: base
+sections:
+    - id: about
+      title: About
+    - id: interests
+      title: Interests
+    - id: projects
+      title: Projects
+    - id: blog
+      title: Blog
+---
       <!-- One -->
-      <section id="one">
+      <section id="about">
         <div class="container">
           <header class="major">
             <h2>Jonathan Duck</h2>
@@ -58,10 +24,10 @@
       </section>
 
       <!-- Two -->
-      <section id="two">
+      <section id="interests">
         <div class="container">
-          <h3>Things I like to do</h3>
-          <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
+          <h3>Interests</h3>
+          <p>I mostly like to code, but I have other interests too.</p>
           <ul class="feature-icons">
             <li class="fa-code">Write all the code</li>
             <li class="fa-university">Attending church</li>
@@ -74,30 +40,24 @@
       </section>
 
       <!-- Three -->
-      <section id="three">
+      <section id="projects">
         <div class="container">
-          <h3>A Few Accomplishments</h3>
-          <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+          <h3>Projects</h3>
+          <p>Github projects are always cool.</p>
           <div class="features">
             <article>
-              <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+              <a href="/fish-eater/" class="image"><img src="images/pic01.jpg" alt="" /></a>
               <div class="inner">
-                <h4>Possibly broke spacetime</h4>
-                <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+                <h4>Fish Eater</h4>
+                <p>An port of a game I made in C# for my little sister. An early JavaScript project to teach me the language. Also a fun little game. Fair warning: there is sound that plays.</p>
               </div>
             </article>
             <article>
-              <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+              <a href="https://chrome.google.com/webstore/detail/lds-scriptures/ijknidpjhcgbeliijjdmlonlcaobfldf?utm_source=chrome-ntp-icon" class="image"><img src="images/pic02.jpg" alt="" /></a>
               <div class="inner">
-                <h4>Terraformed a small moon</h4>
-                <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
-              </div>
-            </article>
-            <article>
-              <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-              <div class="inner">
-                <h4>Snapped dark matter in the wild</h4>
-                <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer adipiscing ornare amet.</p>
+                <h4>LDS Scriptures</h4>
+                <p>This is an application for downloading and reading scriptures via a Google Chrome Extension. This is no longer under maintainance because I grew tired of the Chrome API's changing and blocking my ways of accessing web resources for security.
+                  It does some cool stuff, but is likely broken from repeated refactors. I am currently rewriting this as a new project in Go, called ldss.</p>
               </div>
             </article>
           </div>
@@ -105,30 +65,17 @@
       </section>
 
       <!-- Four -->
-      <section id="four">
+      <section id="blog">
         <div class="container">
-          <h3>Contact Me</h3>
-          <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-          <form method="post" action="#">
-            <div class="row uniform">
-              <div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-              <div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-            </div>
-            <div class="row uniform">
-              <div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-            </div>
-            <div class="row uniform">
-              <div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-            </div>
-            <div class="row uniform">
-              <div class="12u">
-                <ul class="actions">
-                  <li><input type="submit" class="special" value="Send Message" /></li>
-                  <li><input type="reset" value="Reset Form" /></li>
-                </ul>
-              </div>
-            </div>
-          </form>
+          <h3>Blog</h3>
+          <p>There is not a lot here, but maybe there will be now that I have this set up.</p>
+          <ul>
+            {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a> {{ post.excerpt }}
+            </li>
+            {% endfor %}
+          </ul>
         </div>
       </section>
 
@@ -478,30 +425,3 @@
 								</div>
 							</section>
 						-->
-
-    </div>
-
-    <!-- Footer -->
-    <section id="footer">
-      <div class="container">
-        <ul class="copyright">
-          <li>&copy; Untitled. All rights reserved.</li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-        </ul>
-      </div>
-    </section>
-
-  </div>
-
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollzer.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/skel.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>

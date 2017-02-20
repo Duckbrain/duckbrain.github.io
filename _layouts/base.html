@@ -1,0 +1,71 @@
+---
+---
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Jonathan Duck's Github Projects</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="{{baseurl}}/assets/css/main.css" />
+  <link rel="shortcut icon" href="favicon.png" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+
+<body>
+
+  <!-- Header -->
+  <section id="header">
+    <header>
+      <span class="image avatar"><img src="{{baseurl}}/images/avatar.jpg" alt="" /></span>
+      <h1 id="logo"><a href="{{baseurl}}/">Jonathan Duck</a></h1>
+      <p>I love programming, with an emphasis on web development.</p>
+    </header>
+    <nav id="nav">
+      <ul>
+        {% for section in page.sections %}
+        <li><a href="#{{ section.id }}">{{ section.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <footer>
+      <ul class="icons">
+        <li><a href="https://github.com/duckbrain" class="icon fa-github"><span class="label">Github</span></a></li>
+      </ul>
+    </footer>
+  </section>
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        {{content}}
+    </div>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <ul class="copyright">
+          <li>&copy; Untitled. All rights reserved.</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="{{baseurl}}/assets/js/jquery.min.js"></script>
+  <script src="{{baseurl}}/assets/js/jquery.scrollzer.min.js"></script>
+  <script src="{{baseurl}}/assets/js/jquery.scrolly.min.js"></script>
+  <script src="{{baseurl}}/assets/js/skel.min.js"></script>
+  <script src="{{baseurl}}/assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="{{baseurl}}/assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="{{baseurl}}/assets/js/main.js"></script>
+
+</body>
+
+</html>

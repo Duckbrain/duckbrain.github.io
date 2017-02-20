@@ -2559,8 +2559,9 @@ input[type="button"]:disabled,
 
 /* One */
 
-#one:before {
-  background-image: url("../../images/banner.png");
+#about:before {
+  background-color: #8cdfff;
+  background-image: url("../../images/banner.svg");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2729,7 +2730,7 @@ input[type="button"]:disabled,
     padding: 44px 0 1px 0;
   }
   /* One */
-  #one:before {
+  #about:before {
     height: 10em;
   }
   /* Off-Canvas Navigation */
@@ -2900,7 +2901,7 @@ input[type="button"]:disabled,
     padding: 2em 0 0 0;
   }
   /* One */
-  #one:before {
+  #about:before {
     height: 7em;
   }
   /* Footer */
